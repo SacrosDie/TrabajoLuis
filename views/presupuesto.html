@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannoli Factory</title>
+    <link rel="icon" type="image/png" href="./../assets/images/cannoli.png">
+    <link rel="stylesheet" href="./../css/estilos.css">
+</head>
+<body>
+
+    <!--HEADER-->
+
+    <header>
+        <a href="./index.html"><img class="logo" src="./../assets/images/1-95121d1c.png" alt="logotipo" width="275" height="295"></a>
+        <h1>Cannoli Factory</h1>
+    </header>
+
+    <!--NAV-->
+
+    <nav>
+        <ul class="menu">
+           <li><a href="./../index.html">Inicio</a></li> 
+           <li><a href="./../views/producto.html">Producto</a></li> 
+           <li><a class="selected" href="./../views/presupuesto.html">Presupuestos</a></li> 
+           <li><a href="./../views/contacto.html">Contacto</a></li> 
+        </ul>
+        <form>
+            <input type="search" placeholder="Buscar">
+            <input type="submit" value="Buscar" id="submit">
+        </form>
+    </nav>
+
+    <!--MAIN-->
+
+    <main>
+        <section>
+            <h2 class="stylform">Solicita tu presupuesto</h2>
+            <form id="myform" name="myform" method="post" action="#" target="_self" class="container">
+                <ul class="flex-outer">
+                    <li>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}" title="Escriba solo letras entre 3 y 15 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" id="email" name="email" placeholder="Escriba su email" pattern="[a-zA-Z0-9_-.]+@[a-z0-9.-_]+
+                        \.[a-z]{2,4}" title="Escriba su correo electronico" required>
+                    </li>
+                    <li>
+                        <label for="tel">Telefono</label>
+                        <input type="tel" id="tel" name="telefono" placeholder="Numero telefonico" pattern="[0-9]{9}" title="Escriba solo numeros. Ejemplo: 666555444" required>
+                    </li>
+                    <li>
+                        <label for="message">Solicite mas informacion</label>
+                        <textarea rows="6" id="message" placeholder="Escriba aqui su mensaje"></textarea>
+                    </li>
+                    <li>
+                        <label for="polpriv"><input type="checkbox" id="polpriv" required> He leido y acepto la <a href="#">politica de privacidad</a> de la empresa.</label>
+                        
+                    </li>
+                    <li class="libuttons">
+                        <button type="reset">Borrar</button>
+                        <button type="submit">Enviar</button>
+                    </li>
+                
+                </ul>
+            </form>
+        </section>
+        <aside>
+            <h2>Contenido Relacionado</h2>
+            <img class="foto" src="./../assets/images/1-95121d1c.png" alt="foto" width="275" height="295">
+                <ul>
+                    <li><a href="#">Recetas de cannoli clasico en la cocina Italiana</a></li>
+                    <li><a href="#">La Historia del Cannoli</a></li>
+                    <li><a href="#">Maridajes de vino para postres italianos</a></li>
+                    <li><a href="#">El Blog de la Cina Italiana</a></li>
+                    <li><a href="#">Eventos gastronomicos Valencia 2024</a></li>
+                </ul>
+        </aside>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer>
+        <div>
+            <a href="https://x.com/?lang=es"><img class="fa-brands fa-x" src="./../assets/images/gorjeo.png" alt="logotipo de X" width="512" height="512"></a>
+            <a href="https://www.facebook.com/?locale=es_ES"><img class="fa-brands fa-facebook" src="./../assets/images/facebook.png" alt="logotipo de facebook" width="512" height="512"></a>
+            <a href="https://www.instagram.com"><img class="fa-brands fa-instagram" src="./../assets/images/logotipo-de-instagram.png" alt="logotipo de instagram" width="512" height="512"></a>
+        </div>
+        <p>Carrer de Jorge Juan, 19, L'Eixample, 46004 València, Valencia. </p>
+        <p>&copy;2024 Cannoli Factory</p>
+    </footer>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
